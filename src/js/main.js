@@ -1,2 +1,2 @@
-//= ../../bower_components/jquery/dist/jquery.js
+//= partials/jquery.js
 //= partials/script.js

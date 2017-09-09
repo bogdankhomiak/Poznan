@@ -269,6 +269,13 @@ ul {
   list-style: none;
 }
 
+.p {
+  font-size: 14px;
+  font-family: "PTSans", sans-serif;
+  color: #767676;
+  line-height: 1.571;
+}
+
 .header {
   padding: 45px 0 65px 0;
   background-color: #dcdcdc;
@@ -449,5 +456,44 @@ ul {
   flex-wrap: wrap;
   &__txt {
     width: 370px;
+  }
+}
+
+.footer {
+  background-color: #767676;
+}
+
+.footer-info {
+  font-size: 14px;
+  font-family: "PTSans", sans-serif;
+  color: #fff;
+  width: 200px;
+  display: inline-block;
+  &__mail{
+    color: #ffffff;
+  }
+}
+
+.footer-menu {
+  display: inline-block;
+  &__link {
+    font-size: 14px;
+    font-family: "PTSans", sans-serif;
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+
+.footer-author {
+  width: 230px;
+  float: right;
+  background: url("../images/icon-company.png") no-repeat;
+  &__txt {
+    font-size: 14px;
+    font-family: "PTSans", sans-serif;
+    color: #fff;
+  }
+  &__span{
+    text-decoration: underline;
   }
 }

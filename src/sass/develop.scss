@@ -380,7 +380,6 @@ ul {
 .columns-right {
   width: 780px;
   float: right;
-  border-bottom: 1px solid #777777;
 }
 
 .products {
@@ -423,6 +422,7 @@ ul {
 }
 
 .pagination {
+  border-bottom: 1px solid #777777;
   &__items {
     text-align: center;
   }
@@ -438,5 +438,16 @@ ul {
     &_selected {
       font-size: 18px;
     }
+  }
+}
+
+.description {
+  font-size: 14px;
+  font-family: "PTSans", sans-serif;
+  color: #767676;
+  display: flex;
+  flex-wrap: wrap;
+  &__txt {
+    width: 370px;
   }
 }

@@ -285,15 +285,15 @@ ul {
 .header-contacts {
   text-align: right;
   &__link {
+    font-size: 40px;
     font-family: 'OpenSansCondensed', sans-serif;
     font-weight: lighter;
-    font-size: 40px;
     color: #767676;
   }
   &__feedback {
+    font-size: 24px;
     font-family: 'PTSans', sans-serif;
     font-weight: bold;
-    font-size: 24px;
     border-bottom: 2px dashed #767676;
     color: #767676;
   }
@@ -305,8 +305,8 @@ ul {
     display: inline-block;
   }
   &__link {
-    font-family: 'PTSans', sans-serif;
     font-size: 30px;
+    font-family: 'PTSans', sans-serif;
     color: #ffffff;
     display: block;
     padding: 25px;
@@ -317,5 +317,82 @@ ul {
   overflow: hidden;
   &__img {
     width: 100%;
+  }
+}
+
+.breadcrumb {
+  &__link {
+    font-size: 14px;
+    font-family: 'PTSans', sans-serif;
+    color: #767676;
+    text-decoration: underline;
+  }
+}
+
+.columns-left {
+  width: 200px;
+  float: left;
+}
+
+.filter {
+  &__link {
+    font-size: 18px;
+    font-family: "PTSans", sans-serif;
+    color: #767676;
+  }
+}
+
+.filter-inner {
+  &__items {
+    list-style: disc inside;
+  }
+  &__link {
+    font-size: 14px;
+    font-family: "PTSans", sans-serif;
+    color: #767676;
+    &_selected {
+      color: #010101;
+      text-decoration: underline;
+    }
+  }
+}
+
+.columns-right {
+  width: 780px;
+  float: right;
+}
+
+.products {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.product {
+  display: block;
+  height: 380px;
+  width: 250px;
+  background-color: #dcdcdc;
+  padding: 20px;
+  &__name {
+    font-size: 18px;
+    font-family: "PTSans", sans-serif;
+    color: #767676;
+    display: block;
+  }
+  &__price {
+    font-size: 28px;
+    font-family: "PTSans", sans-serif;
+    color: #444444;
+    font-weight: bold;
+  }
+  &__basket {
+    background: url("../images/icon-basket.png") no-repeat;
+    display: inline-block;
+    text-align: right;
+    width: 28px;
+    height: 21px;
+    float: right;
   }
 }

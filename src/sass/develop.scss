@@ -326,6 +326,9 @@ ul {
     font-family: 'PTSans', sans-serif;
     color: #767676;
     text-decoration: underline;
+    &_selected {
+      text-decoration: none;
+    }
   }
 }
 
@@ -339,12 +342,18 @@ ul {
     font-size: 18px;
     font-family: "PTSans", sans-serif;
     color: #767676;
+    &_selected {
+      text-decoration: underline;
+    }
   }
 }
 
 .filter-inner {
   &__items {
     list-style: disc inside;
+  }
+  &__item {
+    color: #767676;
   }
   &__link {
     font-size: 14px;
@@ -357,15 +366,27 @@ ul {
   }
 }
 
+.advertising {
+  text-align: center;
+  &__name {
+    font-size: 30px;
+    font-family: "PTSans", sans-serif;
+    color: #444444;
+    font-weight: bold;
+    display: block;
+  }
+}
+
 .columns-right {
   width: 780px;
   float: right;
+  border-bottom: 1px solid #777777;
 }
 
 .products {
   &__items {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -375,6 +396,10 @@ ul {
   width: 250px;
   background-color: #dcdcdc;
   padding: 20px;
+  margin: 0 15px 20px 0;
+  &:nth-child(3n) {
+    margin: 0 0 20px 0;
+  }
   &__name {
     font-size: 18px;
     font-family: "PTSans", sans-serif;
@@ -394,5 +419,24 @@ ul {
     width: 28px;
     height: 21px;
     float: right;
+  }
+}
+
+.pagination {
+  &__items {
+    text-align: center;
+  }
+  &__item {
+    display: inline-block;
+  }
+  &__link {
+    font-size: 14px;
+    font-family: "PTSans", sans-serif;
+    color: #767676;
+    display: block;
+    padding: 10px;
+    &_selected {
+      font-size: 18px;
+    }
   }
 }

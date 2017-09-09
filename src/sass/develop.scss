@@ -239,22 +239,62 @@ input, textarea {
   margin: 0 auto;
   padding: 0 10px;
 }
+
 /*
 .p1 {
-  font-family: 'OpenSansCondensed';
+  font-family: 'OpenSansCondensed, sans-serif';
   font-weight: lighter;
 }
 
 .p2 {
-  font-family: 'PTSans';
+  font-family: 'PTSans', sans-serif;
 }
 
 .p3 {
-  font-family: 'PTSans';
+  font-family: 'PTSans', sans-serif;
   font-weight: bold;
 }
 
 .p4 {
-  font-family: 'PTSans';
+  font-family: 'PTSans', sans-serif;
   font-style: italic;
 }*/
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header {
+  padding: 45px 0 65px 0;
+  background-color: #dcdcdc;
+  &__box{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logotype {
+  display: inline-block;
+}
+
+.header-contacts {
+  text-align: right;
+  &__link {
+    font-family: 'OpenSansCondensed', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    color: #767676;
+  }
+  &__feedback {
+    font-family: 'PTSans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom: 2px dashed #767676;
+    color: #767676;
+  }
+}

@@ -1,8 +1,6 @@
 'use strict';
 $(document).ready(function () {
-    $('.slick-js').slick({
-        arrows: true
-    });
+    $('.slick-js').slick({});
     $(".popup-js").fancybox();
     $("form").validate();
 });

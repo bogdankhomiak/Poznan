@@ -242,6 +242,9 @@ input, textarea {
 
 a {
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 ul {
@@ -299,6 +302,7 @@ p {
   &__items {
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   &__item {
     &:last-child {
@@ -314,7 +318,7 @@ p {
     font-family: 'PTSans', sans-serif;
     color: #ffffff;
     display: block;
-    padding: 21px 19px 29px;
+    padding: 21px 20px 29px;
     letter-spacing: 0.7px;
     position: relative;
     text-align: center;
@@ -339,6 +343,13 @@ p {
   &__img {
     width: 100%;
   }
+  &__items {
+    margin-bottom: 0;
+  }
+}
+
+.slider__items {
+  margin: 0;
 }
 
 .breadcrumb {
@@ -486,7 +497,7 @@ p {
     font-family: "PTSans", sans-serif;
     color: #767676;
     display: block;
-    padding: 11px 8px;
+    padding: 11px 10px;
     &_selected {
       font-size: 18px;
     }
@@ -550,8 +561,9 @@ p {
     font-family: "PTSans", sans-serif;
     color: #fff;
   }
-  &__span {
+  &__link {
     text-decoration: underline;
+    color: #fff;
   }
 }
 
@@ -714,8 +726,17 @@ label.error {
   .footer-menu {
     display: block;
   }
-  .popup{
-
+  .popup {
+    width: 100%;
+    overflow: hidden;
+  }
+  input, textarea {
+    width: 100%;
+  }
+  .products {
+    &__items {
+      justify-content: space-around;
+    }
   }
 }
 

@@ -335,6 +335,7 @@ p {
 .slider {
   overflow: hidden;
   margin: 0;
+  position: relative;
   &__img {
     width: 100%;
   }
@@ -554,6 +555,73 @@ p {
   }
 }
 
+.popup {
+  display: none;
+  text-align: center;
+  padding: 24px 45px;
+  &__title {
+    font-size: 24px;
+    font-family: "PTSans", sans-serif;
+    color: #535353;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+input, textarea {
+  display: block;
+  border: 1px solid #c3c3c3;
+  font-size: 14px;
+  font-family: "PTSans", sans-serif;
+  color: #535353;
+  padding: 11px;
+  margin: 5px 0 10px 0;
+  width: 340px;
+  resize: none;
+}
+
+input[type="submit"] {
+  font-size: 22px;
+  font-family: "PTSans", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #777;
+  width: auto;
+  border: none;
+  margin: 20px auto 5px;
+}
+
+input.error {
+  border: 1px solid #FF8383;
+  box-shadow: inset 0 0 13px 0 rgba(228, 106, 106, 0.75);
+}
+
+label {
+  font-size: 14px;
+  font-family: "PTSans", sans-serif;
+  color: #535353;
+}
+
+label.error {
+  visibility: hidden;
+  font-size: 0;
+}
+
+.menu-mob {
+  display: none;
+  background-color: #777;
+  &__link {
+    font-size: 30px;
+    font-family: 'PTSans', sans-serif;
+    color: #ffffff;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 10px;
+    display: block;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .product {
     width: 242px;
@@ -595,15 +663,11 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .product {
-    width: 250px;
-  }
-
-}
-
-@media screen and (max-width: 320px) {
   .menu {
     display: none;
+  }
+  .menu-mob {
+    display: block;
   }
   .logotype {
     margin: 0 0 20px 0;
@@ -636,6 +700,22 @@ p {
   }
   .footer-author {
     float: none;
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+    &__items {
+      display: block;
+    }
+  }
+  .product {
+    width: 250px;
+  }
+  .footer-menu {
+    display: block;
+  }
+  .popup{
+
   }
 }
 

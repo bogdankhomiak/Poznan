@@ -3,7 +3,7 @@
 <div class="global-wrapper">
     //= partials/header.html
     <div class="main">
-        <nav class="menu">
+        <nav class="menu" id="menu">
             <div class="container">
                 <ul class="menu__items">
                     <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
@@ -14,12 +14,19 @@
                 </ul>
             </div>
         </nav>
-        <section class="slider slick-js">
-            <img src="images/slider-1.png" alt="slide" class="slider__img">
-            <img src="images/slider-2.png" alt="slide" class="slider__img">
+        <div class="menu-mob">
+            <div class="container">
+                <a href="#menu" class="menu-mob__link popup-js">Меню</a>
+            </div>
+        </div>
+        <section class="slider">
+            <div class="slider__items slick-js">
+                <img src="images/slider-1.png" alt="slide" class="slider__img">
+                <img src="images/slider-2.png" alt="slide" class="slider__img">
+            </div>
         </section>
         <section class="columns">
-            <div class="container cfix">
+            <div class="container">
                 <div class="breadcrumb">
                     <a href="#" class="breadcrumb__link">Главная</a>
                     <span class="pipe">/</span>

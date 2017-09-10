@@ -14,7 +14,21 @@
                         <a href="tel:+7(499) 777-77-77" class="header-contacts__link">+7(499) 777-77-77</a>
                     </li>
                 </ul>
-                <a href="#" class="header-contacts__feedback">Обратная связь</a>
+                <a href="#popup" class="header-contacts__feedback popup-js">Обратная связь</a>
+                <div class="popup" id="popup">
+                    <h2 class="popup__title">Обратная связь</h2>
+                    <form action="#">
+                        <label for="form-name">Ваше имя *</label>
+                        <input class="form_input" type="text" id="form-name" required>
+                        <label for="form-tel">Телефон *</label>
+                        <input class="form_input" type="text" id="form-tel" required>
+                        <label for="form-email">Email *</label>
+                        <input class="form_input" type="text" id="form-email" required>
+                        <label for="form-text">Сообщение</label>
+                        <textarea name="form-text" id="form-text" cols="30" rows="10"></textarea>
+                        <input class="form_input" type="submit" value="Отправить">
+                    </form>
+                </div>
             </div>
         </div>
     </div>

@@ -330,3 +330,48 @@ p {
     padding-left: 25px;
   }
 }
+
+.posts {
+  display: flex;
+}
+
+.post {
+  background-color: #eaeaea;
+  border-radius: 10px 0 0 0;
+  margin-left: 13px;
+  width: 50%;
+  &__date-authoe {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: #878787;
+    line-height: 1.8;
+  }
+  &__link {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: #076e9f;
+    line-height: 1.8;
+  }
+  &__txt {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: #5C5C5C;
+    line-height: 1.8;
+  }
+  &__likes-comments {
+    display: flex;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: #076E9F;
+    line-height: 1.8;
+    justify-content: flex-end;
+  }
+  &__likes {
+    background: url(../img/icon-thumb-up_blue.png) no-repeat;
+    padding-left: 25px;
+  }
+  &__comments {
+    background: url(../img/icon-chat_blue.png) no-repeat;
+    padding-left: 25px;
+  }
+}

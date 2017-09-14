@@ -18,14 +18,16 @@ ul {
 
 h1 {
   font-family: 'League Gothic Regual', Arial, sans-serif;
-  font-size: 60px;
+  font-size: 57px;
   text-transform: uppercase;
   color: #076e9f;
   margin: 0;
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   display: inline-block;
-  padding: 18px 33px;
+  padding: 3px 33px 0;
+  letter-spacing: 0.6px;
+  line-height: 76px;
 }
 
 h2 {
@@ -39,6 +41,7 @@ h2 {
 h3 {
   font-family: 'League Gothic Regual', Arial, sans-serif;
   font-size: 22px;
+  line-height: 21px;
   text-transform: uppercase;
   color: #076e9f;
   margin: 0;
@@ -48,15 +51,17 @@ p {
   font-family: Arial, sans-serif;
   font-size: 10px;
   color: #5c5c5c;
-  line-height: 1.8;
+  margin: 0;
+  line-height: 13px;
 }
 
 .container {
   position: relative;
+
 }
 
 .header {
-  padding: 17px 0;
+  padding: 16px 0 5px;
 }
 
 .logotype {
@@ -65,6 +70,10 @@ p {
   color: #076e9f;
   text-transform: uppercase;
   text-align: center;
+  margin-top: -9px;
+&_footer{
+  margin-top: 0;
+}
   &__link {
     display: inline-block;
     cursor: pointer;
@@ -91,7 +100,7 @@ p {
   }
   &__link {
     display: block;
-    margin-left: 10px;
+    margin-left: 7px;
   }
 }
 
@@ -99,7 +108,7 @@ p {
   &__items {
     font-size: 0;
     text-align: center;
-    padding: 11px 0;
+    padding: 6px 0;
     display: flex;
     justify-content: center;
   }
@@ -107,9 +116,9 @@ p {
     display: block;
     font-size: 10px;
     text-transform: uppercase;
-    padding: 6px 16px;
+    padding: 3px 16px 1px;
     color: #707070;
-    margin: 0 15px;
+    margin: 0 9px;
     &_active {
       color: #ffffff;
       border: 1px solid #045279;
@@ -125,9 +134,10 @@ p {
   background-size: cover;
   border-top: 2px solid #22aaec;
   border-bottom: 2px solid #22aaec;
-  padding-top: 91px;
+  padding-top: 92px;
   &__head {
     text-align: center;
+    margin-bottom: 76px;
   }
   &__txt {
     font-family: 'League Gothic Regual', Arial, sans-serif;
@@ -136,9 +146,11 @@ p {
     color: #076e9f;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
-    padding: 18px 33px;
-    margin: 19px 90px;
+    padding: 3px 13px 0;
     display: inline-block;
+    margin: 18px auto 0;
+    line-height: 45px;
+    letter-spacing: -0.1px;
   }
 }
 
@@ -147,6 +159,7 @@ p {
   padding: 25px 0;
   &__item {
     position: relative;
+    margin-left: 10px;
   }
   &__img {
     position: absolute;
@@ -157,11 +170,13 @@ p {
     font-family: Arial, sans-serif;
     font-style: italic;
     font-size: 9px;
-    padding: 10px 10px 5px 50px;
     margin-left: 36px;
+    padding: 8px 0 5px 54px;
+    letter-spacing: -0.5px;
   }
   &__txt {
     color: #515151;
+    line-height: 14px;
   }
   &__author {
     color: #828282;
@@ -174,7 +189,13 @@ p {
   }
 }
 
+.sidebar {
+  padding: 32px 0 0 11px;
+}
+
 .sidebar-author {
+  padding-bottom: 14px;
+  margin-bottom: 17px;
   border-bottom: 1px dotted #d5d5d5;
   &__span {
     color: #076e9f;
@@ -184,13 +205,20 @@ p {
     font-size: 10px;
     font-family: Arial, sans-serif;
     line-height: 1.8;
+    padding: 11px 15px 0 0;
   }
 }
 
 .sidebar-posts {
   border-bottom: 1px dotted #d5d5d5;
+  padding-bottom: 26px;
+  margin-bottom: 23px;
   &__item {
     display: flex;
+    margin-top: 11.5px;
+  }
+  &__descr {
+    margin-left: 19px;
   }
   &__title {
     font-size: 10px;
@@ -210,10 +238,14 @@ p {
     display: block;
     text-align: right;
     background: url('../img/icon-chat_grey.png') no-repeat;
+    padding-right: 8px;
   }
 }
 
 .sidebar-currency {
+  &__table {
+    margin-top: 8px;
+  }
   &__row {
     border-bottom: 1px solid #fff;
     display: flex;
@@ -223,14 +255,14 @@ p {
   }
   &__col {
     border-right: 1px solid #fff;
-    width: 39px;
+    width: 40px;
     text-align: center;
     font-size: 10px;
     font-family: Arial, sans-serif;
     color: #076E9F;
-    line-height: 1.4;
     background-color: #c7e9fa;
-    &:first-child, &:last-child {
+    line-height: 19px;
+    &:last-child {
       border-right: none;
     }
     &_head {
@@ -243,15 +275,15 @@ p {
 .icon {
   display: block;
   &__down {
-    background: url("../img/icon-arrow-down.png") no-repeat;
+    background: url("../img/icon-arrow-down.png") no-repeat -1px 6px;
     width: 15px;
-    height: 14px;
+    height: 16px;
     margin: 0 auto;
   }
   &__up {
-    background: url("../img/icon-arrow-up.png") no-repeat;
+    background: url("../img/icon-arrow-up.png") no-repeat -1px 6px;
     width: 15px;
-    height: 14px;
+    height: 16px;
     margin: 0 auto;
   }
 }
@@ -261,11 +293,18 @@ p {
   border-top: 2px solid #22aaec;
   position: relative;
   top: -11px;
+  padding: 21px 0 0 18px;
+  border-left: 1px dotted #d5d5d5;
+  padding-bottom: 33px;
+  margin-bottom: -11px;
 }
 
 .post-main {
   display: flex;
   border-bottom: 1px dotted #d5d5d5;
+  margin-top: 5px;
+  margin-left: -18px;
+  padding-left: 18px;
   &__date-author {
     width: 112px;
     font-size: 8px;
@@ -274,6 +313,7 @@ p {
     font-weight: bold;
     display: flex;
     justify-content: space-between;
+    margin-right: 27px;
   }
   &__date {
     width: 51px;
@@ -284,6 +324,7 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-right: 10px;
   }
   &__author {
     width: 51px;
@@ -295,9 +336,15 @@ p {
     align-items: center;
     text-align: center;
   }
+  &__txt {
+    padding-right: 20px;
+    line-height: 18px;
+  }
   &__bottom {
     display: flex;
     justify-content: space-between;
+    margin-top: 26px;
+    margin-bottom: 20px;
   }
   &__link {
     font-size: 10px;
@@ -309,6 +356,7 @@ p {
     box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25);
     background-image: linear-gradient(0deg, #066396 0, #469bbf 100%);
     display: inline-block;
+    padding: 3px 11px;
   }
   &__likes-comments {
     display: flex;
@@ -331,12 +379,14 @@ p {
     }
   }
   &__likes {
-    background: url(../img/icon-thumb-up_white.png) no-repeat;
-    padding-left: 25px;
+    background: url(../img/icon-thumb-up_white.png) no-repeat 13px 5px;
+    padding-left: 38px;
+    padding-top: 6px;
   }
   &__comments {
-    background: url(../img/icon-chat_white.png) no-repeat;
-    padding-left: 25px;
+    background: url(../img/icon-chat_white.png) no-repeat 13px 5px;
+    padding-left: 38px;
+    padding-top: 6px;
   }
 }
 
@@ -348,8 +398,19 @@ p {
   background-color: #eaeaea;
   border-radius: 10px 0 0 0;
   margin-left: 13px;
+  margin-top: 19px;
   width: 50%;
-  &__date-authoe {
+  padding: 25px 0 0 17px;
+  box-shadow: 0 7px 12px -7px #000;
+  &__head{
+    height: 60px;
+  }
+  &__content{
+    padding: 5px 0 20px;
+    box-sizing: border-box;
+    height: 99px;
+  }
+  &__date-author {
     font-size: 10px;
     font-family: Arial, sans-serif;
     color: #878787;
@@ -366,6 +427,12 @@ p {
     font-family: Arial, sans-serif;
     color: #5C5C5C;
     line-height: 1.8;
+    margin-bottom: -5px;
+  }
+  &__bottom{
+    background-color: #f4f3f3;
+    margin-left: -17px;
+    padding: 8px 0 4px;
   }
   &__likes-comments {
     display: flex;
@@ -374,22 +441,26 @@ p {
     color: #076E9F;
     line-height: 1.8;
     justify-content: flex-end;
+    margin-right: 26px;
   }
   &__likes {
     background: url(../img/icon-thumb-up_blue.png) no-repeat;
-    padding-left: 25px;
+    padding-left: 19px;
   }
   &__comments {
     background: url(../img/icon-chat_blue.png) no-repeat;
-    padding-left: 25px;
+    padding-left: 19px;
+    margin-left: 14px;
   }
 }
 
 .ad-component {
   background-image: linear-gradient(0deg, #f4f3f3 0%, #e8e7e7 100%);
   text-align: center;
-  padding: 30px 10px;
+  padding: 34px 0;
   margin-left: 13px;
+  margin-top: 29px;
+  box-shadow: 0 7px 12px -7px #000;
   &__txt {
     font-size: 12px;
   }
@@ -402,14 +473,19 @@ p {
 }
 
 .footer {
+  &__head{
+    padding: 9px 0 5px 12px;
+  }
   &__box {
     display: flex;
     justify-content: space-between;
+    padding: 11px 0 10px 0;
   }
   &__copyright {
     border-top: 1px dotted #d5d5d5;
     text-align: center;
     text-transform: uppercase;
+    padding: 11px 0;
   }
 }
 
@@ -423,5 +499,6 @@ p {
     font-family: Arial, sans-serif;
     color: #707070;
     text-transform: uppercase;
+    margin-left: 28px;
   }
 }
